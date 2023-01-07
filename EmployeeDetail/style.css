@@ -1,0 +1,114 @@
+/* Making some root */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+:root{
+  --primary-color:#0b0bc1;
+  --heading-font:'Roboto', sans-serif;
+  --label-font:'Nunito', sans-serif;
+  --border-color:#bdbdbd;
+  --del-color:red;
+  --sucess-color:green;
+}
+
+.container{
+  width:50%;
+  max-width:1200px;
+  margin:auto;
+  box-shadow:3px 3px 5px #e3e3e3;
+  padding:1.5em .5em .8em 1.2em;
+}
+.header-part{
+  font-family:var(--heading-font);
+  font-size:1rem;
+  margin:0 auto;
+  padding:0;
+  margin-bottom:25px;
+  text-align:center;
+}
+label, input{
+  font-family:var(--label-font);
+  font-size:1rem;
+  font-weight:bold;
+  width:100%;
+}
+label{
+  display:block;
+}
+input{
+    border:1px solid var(--border-color);
+    padding:5px 0px 5px 3px;
+  }
+.form-group{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2em;
+}
+.form-element{
+  width:40%;
+}
+input[type="submit"]{
+  width:40%;
+  margin-top:30px;
+  background-color:var(--primary-color);
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+.user-detail{
+  font-family:var(--label-font);
+}
+.btn{
+  background-color:var(--del-color);
+  border:none;
+  color:white;
+  font-family:var(--heading-font);
+  font-size:1rem;
+  padding:5px 25px;
+  cursor:pointer;
+}
+.record-items{
+  box-shadow:2px 2px 5px #e3e3e3;
+  padding:10px;
+}
+.records{
+  display:flex;
+  gap:2em;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.user-detail span{
+  display:inline-block;
+  margin:10px;
+}
+.records{
+  margin-top:5em;
+}
+.status{
+  visibility: hidden;
+}
+.error{
+  font-family: var(--label-font);
+  background-color:var(--del-color);
+  color:white;
+  padding:5px;
+  width:50%;
+  margin:10px 0px;
+  border-radius:10px;
+  visibility:visible;
+}
+.sucess{
+  font-family: var(--label-font);
+  background-color:var(--sucess-color);
+  color:white;
+  padding:5px;
+  width:50%;
+  margin:10px 0px;
+  border-radius:10px;
+  transition: all .3s liner;
+  visibility:visible;
+}
+.footer-part{
+  font-family: var(--label-font);
+  text-align: center;
+  margin-top: 100px;
+}
