@@ -133,4 +133,9 @@ window.addEventListener('DOMContentLoaded',()=>{
             mobile[index],
             role[index]);
   }
-})
+});
+
+//adding current date in copyright
+  const date = new Date();
+  const year = date.getFullYear();
+  document.getElementById("date").innerHTML = year;
